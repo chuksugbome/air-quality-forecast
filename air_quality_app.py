@@ -7,7 +7,7 @@ from datetime import datetime
 from sklearn.ensemble import RandomForestRegressor
 
 # Load the trained model and scaler
-data_dir = Path(__file__).parent / "data"
+data_dir = Path(__file__).parent / "dataset"
 model_path = data_dir / "C:/DATASCI/air-quality-forecast/dataset/rf_pm25_model.joblib"
 scaler_path = data_dir / "C:/DATASCI/air-quality-forecast/dataset/scaler_pm25_model.joblib"
 model = joblib.load(model_path)
@@ -17,7 +17,7 @@ print("Model and scaler loaded successfully.")
 
 st.title("Air Quality Prediction App")
 st.write("Predict PM2.5 levels based on environmental factors.")
-st.image("C:/Users/user/Documents/air_quality_forecast/istockphoto.jpg", use_container_width=True)
+st.image("C:/DATASCI/air-quality-forecast/istockphoto.jpg", use_container_width=True)
 st.write("This app uses a Random Forest model to predict PM2.5 levels based on various environmental inputs.")
 st.write("Developed by Chuks Ugbome")
 st.write("Data Source: [Open Africa Air Quality Dataset](https://open.africa/dataset/sensorsafrica-airquality-archive-lagos)")
