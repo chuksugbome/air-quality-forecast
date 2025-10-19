@@ -8,8 +8,8 @@ from sklearn.ensemble import RandomForestRegressor
 
 # Load the trained model and scaler
 data_dir = Path(__file__).parent / "data"
-model_path = data_dir / "C:/Users/user/Documents/air_quality_forecast/rf_pm25_model.joblib"
-scaler_path = data_dir / "C:/Users/user/Documents/air_quality_forecast/scaler_pm25_model.joblib"
+model_path = data_dir / "C:/DATASCI/air-quality-forecast/dataset/rf_pm25_model.joblib"
+scaler_path = data_dir / "C:/DATASCI/air-quality-forecast/dataset/scaler_pm25_model.joblib"
 model = joblib.load(model_path)
 scaler = joblib.load(scaler_path)
 
